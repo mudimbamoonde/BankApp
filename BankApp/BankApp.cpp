@@ -11,6 +11,7 @@ void menu(){
         double Balance = 87444;
         double Deposit;
         int option;
+
         menu();
         do {
             std::cin >> option;
@@ -27,7 +28,7 @@ void menu(){
                 Balance += newBalance;
 
                 std::cout << "Your New Balance is: " << Balance << std::endl;
-                std::cout << "Press 1 to go back Home: ";
+                std::cout << "Press 1 to go back Home: "<<std::endl;
                 std::cin >> option;
             }
             else if (option == 3) {
