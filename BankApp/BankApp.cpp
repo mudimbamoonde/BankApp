@@ -1,28 +1,12 @@
 // BankApp.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 #include <stdio.h>
-void menu(){
-    std::cout <<" 1.Home\n 2.Deposit \n 3.Balance \n 4.Withdraw \n 5.Exit" <<std::endl;
-}
-void Deposit(double Balance) {
-    system("cls");
-    std::cout << "Deposit Amount" << std::endl;
-    std::cout << "======================================================\nEnter Amount: ";
-    double newBalance;
-    std::cin >> newBalance;
-    Balance += newBalance;
+#include "financetop.h"
 
-    std::cout << "Your New Balance is: " << Balance << std::endl;
-    std::cout << "Press 1 to go back Home: ";
-    
-}
-    int main()
+int main()
     {
         double Balance = 87444;      
         int option;
-
         menu();
         do {
             std::cin >> option;
@@ -59,6 +43,11 @@ void Deposit(double Balance) {
                     std::cout << "Press 1 to go back Home: ";
                     std::cin >> option;
                 }
+            }
+            else {
+                std::cout << "Wrong Option \n Press 1 for Main Menu: ";
+                std::cin >> option;
+           
             }
 
         
